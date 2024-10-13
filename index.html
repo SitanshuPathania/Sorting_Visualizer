@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Sorting Visualizer</h1>
+    </div>
+    <div class="controls">
+        <!-- Dropdown for selecting array size -->
+        <label for="arraySize">Array Size:</label>
+        <select id="arraySize">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+        </select>
+
+        <!-- Input for setting the sorting speed -->
+        <!-- It specifies the delay time. So when we increase it, animation becomes slow. -->
+        <label for="sortSpeed">Sorting Speed (ms):</label>
+        <input type="number" id="sortSpeed" value="50" min="10" max="1000" step="10">
+
+        <button onclick="generateArray()">Generate New Array</button>
+        <button onclick="bubbleSort()">Bubble Sort</button>
+        <button onclick="selectionSort()">Selection Sort</button>
+        <button onclick="insertionSort()">Insertion Sort</button>
+        <button onclick="quickSort()">Quick Sort</button>
+        <button onclick="mergeSort()">Merge Sort</button>
+        <button onclick="heapSort()">Heap Sort</button>
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <div id="array-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
