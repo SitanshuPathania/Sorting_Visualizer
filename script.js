@@ -296,6 +296,7 @@ async function heapSort() {
 
         await heapify(i, 0);
     }
+    
     arrayBars[0].style.backgroundColor = "green"; 
 }
 
